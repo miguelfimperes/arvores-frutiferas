@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Árvores Frutíferas - IFES Cachoeiro</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#e8f5e9, #f1f8e9);
+}
+
+:root {
+    --verde: #2e7d32;
+    --amarelo: #fbc02d;
+    --laranja: #fb8c00;
+    --vermelho: #e53935;
+    --roxo: #7b1fa2;
+    --azul: #4fc3f7;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(90deg,#2e7d32,#66bb6a);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* GRID */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* CARD */
+
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.10);
+}
+
+/* IMAGEM */
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* TEXTO */
+
+.info {
+    padding: 10px;
+}
+
+.coord {
+    font-size: 14px;
+}
+
+.curiosidade {
+    font-style: italic;
+}
+
+/* CORES */
+
+.jambeiro { background:#8e24aa; }
+.goiaba { background:#e53935; }
+.amora { background:#5e35b1; }
+.manga { background:#fb8c00; }
+.carambola { background:#fdd835; color:black; }
+.limao { background:#9ccc65; color:black; }
+.banana { background:#fbc02d; color:black; }
+.caju { background:#ff7043; }
+.acerola { background:#d32f2f; }
+
+/* FOOTER */
+
+footer {
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Árvores Frutíferas do IFES Campus Cachoeiro</h1>
+<p>Coordenadas e curiosidades</p>
+</header>
+
+<div class="container">
+
+<div class="card jambeiro">
+<img src="jambeiro.jpg">
+<div class="info">
+<h2>Jambeiro</h2>
+<p class="coord">Coordenadas: -20.000, -41.000</p>
+<p class="curiosidade">Fruto doce usado em sucos.</p>
+</div>
+</div>
+
+<div class="card goiaba">
+<img src="goiaba.jpg">
+<div class="info">
+<h2>Goiabeira</h2>
+<p class="coord">Coordenadas: -20.001, -41.001</p>
+<p class="curiosidade">Rica em vitamina C.</p>
+</div>
+</div>
+
+<div class="card amora">
+<img src="amora.jpg">
+<div class="info">
+<h2>Amora</h2>
+<p class="coord">Coordenadas: -20.002, -41.002</p>
+<p class="curiosidade">Ajuda na imunidade.</p>
+</div>
+</div>
+
+<div class="card manga">
+<img src="manga.jpg">
+<div class="info">
+<h2>Mangueira</h2>
+<p class="coord">Coordenadas: -20.003, -41.003</p>
+<p class="curiosidade">Fruta tropical.</p>
+</div>
+</div>
+
+<div class="card carambola">
+<img src="carambola.jpg">
+<div class="info">
+<h2>Carambola</h2>
+<p class="coord">Coordenadas: -20.004, -41.004</p>
+<p class="curiosidade">Formato de estrela.</p>
+</div>
+</div>
+
+<div class="card limao">
+<img src="limao.jpg">
+<div class="info">
+<h2>Limoeiro</h2>
+<p class="coord">Coordenadas: -20.005, -41.005</p>
+<p class="curiosidade">Muito usado em sucos.</p>
+</div>
+</div>
+
+<div class="card banana">
+<img src="banana.jpg">
+<div class="info">
+<h2>Bananeira</h2>
+<p class="coord">Coordenadas: -20.006, -41.006</p>
+<p class="curiosidade">Muito consumida.</p>
+</div>
+</div>
+
+<div class="card caju">
+<img src="caju.jpg">
+<div class="info">
+<h2>Cajueiro</h2>
+<p class="coord">Coordenadas: -20.007, -41.007</p>
+<p class="curiosidade">Tem castanha.</p>
+</div>
+</div>
+
+<div class="card acerola">
+<img src="acerola.jpg">
+<div class="info">
+<h2>Aceroleira</h2>
+<p class="coord">Coordenadas: -20.008, -41.008</p>
+<p class="curiosidade">Muita vitamina C.</p>
+</div>
+</div>
+
+</div>
+
+<footer>
+Projeto Web — IFES Cachoeiro
+</footer>
+
+</body>
+</html>
